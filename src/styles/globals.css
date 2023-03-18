@@ -4,7 +4,7 @@
 
 html {
   background-color: black;
-  font-family: 'Sulphur Point', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #DAE5E3;
 }
 
@@ -12,4 +12,15 @@ html {
   -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
   transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+.custom-text-gradient-bg {
+  background: linear-gradient(270deg, #0E0E0E 0%, #9FB7B1 42.54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.portfolio-section {
+  background: linear-gradient(276.29deg, rgba(190, 219, 212, 0.88) 5.31%, rgba(163, 185, 187, 0) 97.79%);
 }

@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 html {
-  background-color: black;
-  font-family: "Inter", sans-serif;
-  color: #dae5e3;
+    background-color: black;
+    font-family: "Inter", sans-serif;
+    color: #dae5e3;
 }
 
 .rotated-text-home {
-  transform: translateX(45%) translateY(180px) rotate(90deg);
+    transform: translateX(45%) translateY(185px) rotate(90deg);
 }
 
 .custom-text-gradient-bg {
-  background: linear-gradient(270deg, #0e0e0e 0%, #9fb7b1 42.54%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    background: linear-gradient(270deg, #0e0e0e 0%, #9fb7b1 42.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .portfolio-section {
-  background: linear-gradient(
-    276.29deg,
-    rgba(190, 219, 212, 0.88) 5.31%,
-    rgba(163, 185, 187, 0) 97.79%
-  );
+    background: linear-gradient(
+            276.29deg,
+            rgba(190, 219, 212, 0.88) 5.31%,
+            rgba(163, 185, 187, 0) 97.79%
+    );
 }

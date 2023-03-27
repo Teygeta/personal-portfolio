@@ -18,18 +18,21 @@ export default function Home() {
 
   return (
     <>
-      {!imageLoaded && (
-        <div className="fixed z-30 h-screen flex justify-center items-center w-full bg-black">
-          <div className="spinner">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+      <motion.div
+        className={`fixed z-30 h-screen flex justify-center items-center w-full bg-black ${imageLoaded ? "opacity-0 pointer-events-none" : ""}`}
+        initial={{opacity: 1}}
+        animate={{opacity: 0}}
+        transition={{duration: 1.5}}
+      >
+        <div className="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      )}
+      </motion.div>
 
       <header className="h-screen relative">
         <Image

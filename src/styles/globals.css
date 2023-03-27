@@ -12,7 +12,7 @@ html {
     transform: translateX(45%) translateY(185px) rotate(90deg);
 }
 
-.custom-text-gradient-bg {
+.custom-text-green-gradient {
     background: linear-gradient(270deg, #0e0e0e 0%, #9fb7b1 42.54%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

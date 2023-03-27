@@ -1,6 +1,7 @@
 import Image from "next/image"
 import {motion, useScroll, useTransform} from "framer-motion"
 import {Navbar} from "@/components/Nav";
+import {useState} from "react";
 
 export default function Home() {
   const fitImage = {
@@ -10,8 +11,26 @@ export default function Home() {
   let {scrollYProgress} = useScroll()
   let y = useTransform(scrollYProgress, [0, 2], ["0%", "-100%"]) //TODO capire se usare scrollY oppure scrollYProgress
 
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <>
+      {!imageLoaded && (
+        <div className="fixed z-30 h-screen flex justify-center items-center w-full bg-black">
+          <div className="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      )}
+
       <header className="h-screen relative">
         <Image
           alt="home-bg"
@@ -20,6 +39,7 @@ export default function Home() {
           fill
           quality={100}
           priority
+          onLoad={handleImageLoad}
         />
         <div className="rotated-text-home float-right text-sm">
           <p className="font-inter font-extralight text-[#BEDBD4] mix-blend-difference ml-10">

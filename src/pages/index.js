@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className={`fixed z-30 h-screen flex justify-center items-center w-full bg-black ${imageLoaded ? "opacity-0 pointer-events-none" : ""}`}
+        className={`fixed z-30 h-screen flex justify-center items-center w-full bg-black ${imageLoaded ? "opacity-100" : ""}`}
         initial={{opacity: 1}}
         animate={{opacity: 0}}
         transition={{duration: 1.5}}
@@ -42,7 +42,6 @@ export default function Home() {
           fill
           quality={100}
           priority
-          onLoad={handleImageLoad}
         />
         <div className="rotated-text-home float-right text-sm">
           <p className="font-inter font-extralight text-[#BEDBD4] mix-blend-difference ml-10">
@@ -102,6 +101,7 @@ export default function Home() {
           fill
           quality={100}
           className="-z-10"
+          onLoad={handleImageLoad}
         />
         <div className="mix-blend-difference pt-80 ml-[20%]">
           <h1 className="text-5xl italic font-bold tracking-tight">PORTFOLIO</h1>

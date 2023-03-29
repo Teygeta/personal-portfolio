@@ -1,4 +1,4 @@
-import {Html, Head, Main, NextScript} from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
@@ -35,12 +35,11 @@ export default function Document() {
         <meta name="twitter:image"
               content="http://www.vittoriogioda.com/_next/image?url=%2Funsplash_WUtT8cGRPog.png&w=3840&q=100"/>
 
-        {/* Links */}
+        {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Sulphur+Point:wght@400;700&display=swap"
-          /*rimuovere font non utilizzati*/
+          href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"/>
 
       </Head>

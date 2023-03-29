@@ -1,57 +1,50 @@
-import Image from "next/image"
-import {motion, useScroll, useTransform} from "framer-motion"
-import {Navbar} from "@/components/Nav";
-import {useState} from "react";
+import Image from "next/image";
+import { motion, useInView, useScroll, useTransform, stagger } from "framer-motion";
+import { Navbar } from "@/components/Nav";
+import { useRef, useState } from "react";
+import { SpinnerLoader } from "@/components/SpinnerLoader";
 
 export default function Home() {
-  const fitImage = {
-    objectFit: "cover",
-  }
 
-  let {scrollYProgress} = useScroll()
-  let y = useTransform(scrollYProgress, [0, 2], ["0%", "-100%"]) //TODO capire se usare scrollY oppure scrollYProgress
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const { scrollYProgress } = useScroll()
+  const y = useTransform(scrollYProgress, [0, 2], ["0%", "-100%"])
+
+  const translateY = {
+    transform: isInView ? "none" : "translateY(200px)",
+    opacity: isInView ? 1 : 0,
+    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
+  }
 
   const [imageLoaded, setImageLoaded] = useState(false);
   const handleImageLoad = () => {
     setImageLoaded(true);
+    console.log("Image Loaded")
   };
 
   return (
     <>
-      <motion.div
-        className={`fixed z-30 h-screen flex justify-center items-center w-full bg-black ${imageLoaded ? "opacity-100" : ""}`}
-        initial={{opacity: 1}}
-        animate={{opacity: 0}}
-        transition={{duration: 1.5}}
-      >
-        <div className="spinner">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </motion.div>
-
-      <header className="h-screen relative">
+      <SpinnerLoader imageLoaded={imageLoaded}/>
+      <Navbar/>
+      <header id="home" className="h-screen relative">
         <Image
           alt="home-bg"
-          style={fitImage}
+          style={{ objectFit: "cover" }}
           src="/unsplash_WUtT8cGRPog.png"
           fill
           quality={100}
           priority
         />
         <div className="rotated-text-home float-right text-sm">
-          <p className="font-inter font-extralight text-[#BEDBD4] mix-blend-difference ml-10">
+          <p className="font-extralight text-[#BEDBD4] mix-blend-difference ml-10">
             Design by Vittorio Gioda - Turin, Italy. 2023
           </p>
         </div>
         <div>
         </div>
-        <Navbar/>
-        <motion.div className="pt-72 md:ml-[15%] mx-[10%] w-fit mix-blend-difference" style={{y}}>
+        <motion.div className="pt-72 md:ml-[15%] mx-[10%] w-fit mix-blend-difference" style={{ y }}>
           <p className="font-extralight md:text-2xl text-md text-[#BEDBD4] tracking-tighter">
             Hi, I&apos;m Vittorio.
           </p>
@@ -60,14 +53,15 @@ export default function Home() {
           </h1>
         </motion.div>
       </header>
-
-      <section className="h-[90vh] md:flex">
-        <div className="w-fit mx-auto my-auto text-right flex-1 mr-[8%]">
-          <div className="font-extralight -tracking-widest md:text-3xl opacity-90">
+      <section id="technology" className="max-md:h-[90vh] h-screen md:flex">
+        <div ref={ref} style={translateY} className="w-fit mx-auto my-auto text-right flex-1 mr-[10%]">
+          <div className="custom-text-black-gradient font-extralight tracking-tighter md:text-3xl opacity-90">
             what I mainly use in my projects
           </div>
           <div className="custom-text-green-gradient md:text-[80px] text-5xl italic font-semibold">
-            <div>NEXTJS</div>
+            <div>
+              NEXTJS
+            </div>
             <div>TAILWIND</div>
             <div>EXPRESS</div>
             <div>MYSQL</div>
@@ -76,8 +70,8 @@ export default function Home() {
           </div>
         </div>
         <div className="max-md:hidden border-[0.5px] border-white opacity-40 my-10"></div>
-        <div className="flex-1 my-auto ml-[8%] mr-5">
-          <p className="max-w-sm font-light tracking-tight text-xl opacity-90">
+        <div style={translateY} className="flex-1 my-auto ml-[10%] mr-5">
+          <p className="max-w-xs font-extralight tracking-tight text-xl opacity-90">
             Beginning to study computer programming on my own (2021)
             <br/>
             <br/>
@@ -92,18 +86,19 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      <section className="relative h-screen">
+      <section id="portfolio" className="relative h-screen">
         <Image
           alt="portfolio-bg"
-          style={fitImage}
+          style={{ objectFit: "cover" }}
           src="/unsplash_DVzaV16Wcao.png"
           fill
           quality={100}
           className="-z-10"
           onLoad={handleImageLoad}
+          priority
         />
-        <div className="mix-blend-difference pt-80 ml-[20%]">
+
+        <motion.div className="mix-blend-difference pt-[34rem] ml-[20%]" style={{ y }}>
           <h1 className="text-5xl italic font-bold tracking-tight">PORTFOLIO</h1>
           <p className="text-xl font-light tracking-tight">Some of my personal projects, done to improve my programming
             skills.
@@ -112,9 +107,10 @@ export default function Home() {
             initially
             focused on functionality rather than design.
           </p>
-        </div>
-
+        </motion.div>
       </section>
     </>
   )
 }
+
+

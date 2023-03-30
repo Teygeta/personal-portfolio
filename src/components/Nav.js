@@ -13,7 +13,7 @@ export function Navbar() {
       <div className="md:w-fit md:py-3 p-8 font-inter font-extralight text-[#BEDBD4]">
         <div className="flex gap-10 max-md:hidden">
           {links.map(({ href, name }) => (
-            <Link href={href} scroll={false}>{name}</Link>
+            <Link key={name} href={href} scroll={false}>{name}</Link>
           ))}
 
         </div>

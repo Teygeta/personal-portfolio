@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { motion, useInView, useScroll, useTransform, stagger } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Navbar } from "@/components/Nav";
 import { useRef, useState } from "react";
 import { SpinnerLoader } from "@/components/SpinnerLoader";
@@ -7,17 +7,13 @@ import { SpinnerLoader } from "@/components/SpinnerLoader";
 export default function Home() {
 
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
 
+  // FRAMER MOTION
   const { scrollYProgress } = useScroll()
   const y = useTransform(scrollYProgress, [0, 2], ["0%", "-100%"])
 
-  const translateY = {
-    transform: isInView ? "none" : "translateY(200px)",
-    opacity: isInView ? 1 : 0,
-    transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s"
-  }
-
+  //SPINNER-IMAGE LOGIC
+  //TODO correggere
   const [imageLoaded, setImageLoaded] = useState(false);
   const handleImageLoad = () => {
     setImageLoaded(true);
@@ -54,23 +50,23 @@ export default function Home() {
         </motion.div>
       </header>
       <section id="technology" className="max-md:h-[90vh] h-screen md:flex">
-        <div ref={ref} style={translateY} className="w-fit mx-auto my-auto text-right flex-1 mr-[10%]">
+        <div ref={ref} className="w-fit mx-auto my-auto text-right flex-1 mr-[10%]">
           <div className="custom-text-black-gradient font-extralight tracking-tighter md:text-3xl opacity-90">
             what I mainly use in my projects
           </div>
-          <div className="custom-text-green-gradient md:text-[80px] text-5xl italic font-semibold">
-            <div>
+          <ul className="custom-text-green-gradient md:text-[80px] text-5xl italic font-semibold">
+            <li>
               NEXTJS
-            </div>
-            <div>TAILWIND</div>
-            <div>EXPRESS</div>
-            <div>MYSQL</div>
-            <div>SUPABASE</div>
-            <div>FRAMER</div>
-          </div>
+            </li>
+            <li>TAILWIND</li>
+            <li>EXPRESS</li>
+            <li>MYSQL</li>
+            <li>SUPABASE</li>
+            <li>FRAMER</li>
+          </ul>
         </div>
         <div className="max-md:hidden border-[0.5px] border-white opacity-40 my-10"></div>
-        <div style={translateY} className="flex-1 my-auto ml-[10%] mr-5">
+        <div className="flex-1 my-auto ml-[10%] mr-5">
           <p className="max-w-xs font-extralight tracking-tight text-xl opacity-90">
             Beginning to study computer programming on my own (2021)
             <br/>

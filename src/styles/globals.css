@@ -7,6 +7,7 @@ html {
     font-family: 'Archivo', sans-serif;
     color: rgba(255, 255, 255, 0.88);
     scroll-behavior: smooth;
+    letter-spacing: -0.03em;
 }
 
 .rotated-text-home {
@@ -14,7 +15,7 @@ html {
 }
 
 .custom-text-green-gradient {
-    background: linear-gradient(270deg, #0e0e0e 0%, #9fb7b1 42.54%);
+    background: linear-gradient(270deg, #0e0e0e 0%, #b7d3cf 42.54%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -22,6 +23,13 @@ html {
 
 .custom-text-black-gradient {
     background: linear-gradient(90deg, #ffffff 0%, #333333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.custom-text-lightgreen-gradient {
+    background: linear-gradient(90deg, #C0E1DB 0%, rgba(76, 118, 108, 0.88) 101.6%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -36,8 +44,8 @@ html {
 }
 
 .spinner {
-    width: 44.8px;
-    height: 44.8px;
+    width: 45px;
+    height: 45px;
     animation: spinner-y0fdc1 3.8s infinite ease;
     transform-style: preserve-3d;
 }
@@ -147,4 +155,21 @@ html {
     100% {
         transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
     }
+}
+
+.custom-button {
+    @apply max-md:py-2 md:text-2xl mx-auto my-5 border-[1px] px-7 py-2 text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference
+}
+
+.custom-transparent-text-border {
+    font-size: 230px;
+    font-style: italic;
+    opacity: 0.15;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 420px;
+    left: -60px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-fill-color: rgba(255, 213, 0, 0);
 }

@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Navbar } from "@/components/Nav";
 import { useRef, useState } from "react";
 import { SpinnerLoader } from "@/components/SpinnerLoader";
+import { DesignConcepts } from "@/components/DesignConcepts";
 
 export default function Home() {
 
@@ -28,7 +29,7 @@ export default function Home() {
         <Image
           alt="home-bg"
           style={{ objectFit: "cover" }}
-          src="/unsplash_WUtT8cGRPog.png"
+          src="/img/primopiano-prova.png"
           fill
           quality={100}
           priority
@@ -41,23 +42,33 @@ export default function Home() {
         <div>
         </div>
         <motion.div className="pt-72 md:ml-[15%] mx-[10%] w-fit mix-blend-difference" style={{ y }}>
-          <p className="font-extralight md:text-2xl text-md text-[#BEDBD4] tracking-tighter">
+          <p className="font-extralight md:text-2xl text-md text-[#BEDBD4]">
             Hi, I&apos;m Vittorio.
           </p>
-          <h1 className="md:text-8xl text-5xl text-[#d5ebe7] font-normal mix-blend-difference tracking-tighter">
+          <h1 className="md:text-8xl text-5xl text-[#d5ebe7] custom-text-lightgreen-gradient mb-10">
             FULL-STACK WEB <br/>STUDENT <br/>AND DEVELOPER
           </h1>
+          <button className="custom-button">
+            Get In Touch
+          </button>
         </motion.div>
       </header>
-      <section id="technology" className="max-md:h-[90vh] h-screen md:flex">
+      <section id="technology" className="max-md:h-[90vh] h-screen md:flex relative">
+        <Image
+          alt="technology-bg"
+          style={{ objectFit: "cover", opacity: 0.5 }}
+          src="/img/unsplash_WUtT8cGRPog.png"
+          fill
+          quality={100}
+          className="-z-10"
+          priority
+        />
         <div ref={ref} className="w-fit mx-auto my-auto text-right flex-1 mr-[10%]">
-          <div className="custom-text-black-gradient font-extralight tracking-tighter md:text-3xl opacity-90">
+          <div className="custom-text-black-gradient font-extralight md:text-3xl opacity-90">
             what I mainly use in my projects
           </div>
-          <ul className="custom-text-green-gradient md:text-[80px] text-5xl italic font-semibold">
-            <li>
-              NEXTJS
-            </li>
+          <ul className=" custom-text-green-gradient md:text-[80px] text-5xl italic font-semibold">
+            <li>NEXTJS</li>
             <li>TAILWIND</li>
             <li>EXPRESS</li>
             <li>MYSQL</li>
@@ -86,7 +97,7 @@ export default function Home() {
         <Image
           alt="portfolio-bg"
           style={{ objectFit: "cover" }}
-          src="/unsplash_DVzaV16Wcao.png"
+          src="/img/unsplash_DVzaV16Wcao.png"
           fill
           quality={100}
           className="-z-10"
@@ -94,7 +105,8 @@ export default function Home() {
           priority
         />
 
-        <motion.div className="mix-blend-difference pt-[34rem] ml-[20%]" style={{ y }}>
+        <motion.div className="mix-blend-difference pt-[34rem]" style={{ y }}>
+          <h1 className="custom-transparent-text-border">PORTFOLIO</h1>
           <h1 className="text-5xl italic font-bold tracking-tight">PORTFOLIO</h1>
           <p className="text-xl font-light tracking-tight">Some of my personal projects, done to improve my programming
             skills.
@@ -104,6 +116,13 @@ export default function Home() {
             focused on functionality rather than design.
           </p>
         </motion.div>
+        <div className="relative">
+          <p className="mix-blend-difference text-2xl">Take a look at my profiles</p>
+          <button className="custom-button w-52">GitHub</button>
+          <br/>
+          <button className="custom-button w-52">Start2Impact</button>
+          <DesignConcepts/>
+        </div>
       </section>
     </>
   )

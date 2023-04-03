@@ -1,6 +1,9 @@
-# Block all crawlers for /accounts
-User-agent: *
-
-# Allow all crawlers
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://vittoriogioda.com
+
+# Sitemaps
+Sitemap: https://vittoriogioda.com/sitemap.xml

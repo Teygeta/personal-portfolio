@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    img, video {
+        max-width: initial;
+        height: initial;
+    }
+}
+
 html {
     background-color: black;
     font-family: 'Archivo', sans-serif;
     color: rgba(255, 255, 255, 0.88);
     scroll-behavior: smooth;
     letter-spacing: -0.03em;
+    overflow-x: hidden;
 }
 
 .rotated-text-home {
@@ -157,18 +165,16 @@ html {
     }
 }
 
+/*TODO fare hover effect */
 .custom-button {
     @apply max-md:py-2 md:text-2xl mx-auto my-5 border-[1px] px-7 py-2 text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference
 }
 
-.custom-transparent-text-border {
+.custom-transparent-text-bordered {
     font-size: 230px;
     font-style: italic;
     opacity: 0.15;
     letter-spacing: 1px;
-    position: absolute;
-    top: 420px;
-    left: -60px;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #ffffff;
     -webkit-text-fill-color: rgba(255, 213, 0, 0);

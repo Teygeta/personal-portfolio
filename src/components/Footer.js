@@ -4,7 +4,8 @@ export function Footer() {
       <div className="border-t opacity-70 mx-5 mb-10"></div>
       <div className="flex text-sm font-thin mx-10">
         <div className="max-w-[100px] flex-1">
-          Until you realize that being happy about what you do is an opportunity few people have, you don't live well in
+          Until you realize that being happy about what you do is an opportunity few people have, you don&apos;t live
+          well in
           the
           work you do
         </div>

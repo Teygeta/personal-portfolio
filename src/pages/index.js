@@ -2,6 +2,8 @@ import { Navbar } from "@/components/Nav";
 import { Introduction } from "@/components/Introduction";
 import { Technology } from "@/components/Technology";
 import { Portfolio } from "@/components/Portfolio";
+import { Contacts } from "@/components/Contacts";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
 
@@ -20,6 +22,8 @@ export default function Home() {
       <Introduction/>
       <Technology/>
       <Portfolio/>
+      <Contacts/>
+      <Footer/>
     </>
   )
 }

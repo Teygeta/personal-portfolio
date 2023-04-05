@@ -12,7 +12,6 @@ export default function Document() {
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="language" content="English"/>
         <meta name="author" content="Vittorio Gioda"/>
-        <meta name="robots" content="noindex,nofollow"/>
 
         {/* Google */}
         <meta itemProp="name" content="Vittorio Gioda"/>
@@ -39,7 +38,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;1,500;1,600;1,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"/>
 
       </Head>

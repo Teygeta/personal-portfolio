@@ -2,6 +2,8 @@ import Link from "next/link";
 
 export function Navbar() {
 
+  //TODO rifare bene la navbar
+
   const links = [
     { href: "#home", name: "Home" },
     { href: "#technology", name: "Technology" },
@@ -18,8 +20,8 @@ export function Navbar() {
 
         </div>
         <div className="float-right md:hidden">
-          <div className=" border-[1px] border-[#BEDBD4] w-7 mb-2 -mt-1"></div>
-          <div className=" border-[1px] border-[#BEDBD4] w-7"></div>
+          <div className=" border border-[#BEDBD4] w-7 mb-2 -mt-1"></div>
+          <div className=" border border-[#BEDBD4] w-7"></div>
         </div>
       </div>
     </nav>

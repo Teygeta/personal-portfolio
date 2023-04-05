@@ -167,7 +167,7 @@ html {
 
 /*TODO fare hover effect */
 .custom-button {
-    @apply max-md:py-2 md:text-2xl mx-auto my-5 border-[1px] px-7 py-2 text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference
+    @apply block px-3 py-1 border text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference
 }
 
 .custom-transparent-text-bordered {

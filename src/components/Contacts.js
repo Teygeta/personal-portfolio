@@ -1,9 +1,9 @@
 export function Contacts() {
 
   return (
-    <section className="pb-32">
+    <section className="pb-32 relative">
       <svg width="100%" height="100%" viewBox="0 0 393 175" fill="none" xmlns="http://www.w3.org/2000/svg"
-           className="w-full object-cover">
+           className="w-full object-cover absolute -top-52 -z-20">
         <path
           d="M420 0.5L355.126 97.3997C354.694 98.0456 354.187 98.639 353.618 99.1677V99.1677C348.245 104.153 339.513 101.861 337.281 94.8806L329.317 69.9745C323.951 53.1938 304.059 46.1585 289.336 55.8344L229.128 95.4028L207.794 112.08C185.174 129.764 153.844 131.206 129.694 115.677V115.677C102.895 98.4432 67.6957 102.291 45.2525 124.907L-3.73285 174.27"
           stroke="#26312E" strokeOpacity="0.37"/>
@@ -14,12 +14,15 @@ export function Contacts() {
           d="M417.5 14.5L340.208 98.3719V98.3719C334.437 103.727 325.055 101.266 322.657 93.7662L315.05 69.9745C309.684 53.1938 289.792 46.1585 275.069 55.8344L214.861 95.4028L193.527 112.08C170.907 129.764 139.577 131.206 115.427 115.677V115.677C88.6279 98.4432 53.4285 102.291 30.9854 124.907L-18 174.27"
           stroke="#26312E"/>
       </svg>
-      <h1 className="text-center text-3xl text-[#BEDBD4] italic">Shall We Cooperate <br/>Together?</h1>
-      <div className="w-full mt-32">
-        <button className="custom-button mx-auto mb-14">Get In Touch</button>
-        <button className="custom-button mx-auto bg-[#BEDBD4]"><p className="mix-blend-difference">Hire Me Now</p>
-        </button>
+      <div className="pt-32">
+        <h1 className="text-center text-3xl text-[#BEDBD4] italic">Shall We Cooperate <br/>Together?</h1>
+        <div className="w-full mt-20">
+          <button className="custom-button mx-auto mb-14">Get In Touch</button>
+          <button className="custom-button mx-auto bg-[#BEDBD4]"><p className="mix-blend-difference">Hire Me Now</p>
+          </button>
+        </div>
       </div>
+
     </section>
   )
 }

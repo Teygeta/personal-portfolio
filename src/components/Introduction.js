@@ -13,7 +13,7 @@ export function Introduction() {
         priority
       />
       <svg width="100%" viewBox="0 0 393 158" fill="none" xmlns="http://www.w3.org/2000/svg"
-           className="w-full absolute object-cover mt-10">
+           className="w-full absolute object-cover mt-10 -z-10">
         <path
           d="M-13 157L55.1662 72.2224C55.4639 71.8522 55.7883 71.5042 56.1369 71.1814V71.1814C61.3575 66.3464 69.8329 68.5723 72.0039 75.3487L79.414 98.4774C84.494 114.333 103.288 120.984 117.21 111.852L174.2 74.4699L194.378 58.7261C215.789 42.0202 245.416 40.6569 268.271 55.3258V55.3258C293.635 71.6056 326.924 67.9684 348.174 46.5952L394.502 0"
           stroke="#26312E" strokeOpacity="0.17"/>
@@ -25,13 +25,13 @@ export function Introduction() {
           stroke="#26312E" strokeOpacity="0.55"/>
       </svg>
       <div className="rotated-text-home float-right">
-        <p className="font-thin text-[#BEDBD4] text-xs md:text-sm mix-blend-difference">
+        <p className="font-thin text-[#BEDBD4] text-xs md:text-sm">
           Design by Vittorio Gioda - Turin, Italy. 2023
         </p>
       </div>
       <div>
       </div>
-      <div className="pt-48 max-w-xs md:pt-72 md:ml-[15%] mx-[10%] w-fit mb-32">
+      <div className="pt-48 max-w-xs md:pt-72 md:ml-[15%] mx-[10%] w-fit mb-14">
         <p className="font-extralight md:text-2xl text-md text-[#BEDBD4]">
           Hi, I&apos;m Vittorio.
         </p>
@@ -42,6 +42,12 @@ export function Introduction() {
           Get In Touch
         </button>
       </div>
+      <svg className="mx-auto mb-10" width="8" height="56" viewBox="0 0 8 56" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M3.64645 55.3536C3.84171 55.5488 4.15829 55.5488 4.35355 55.3536L7.53553 52.1716C7.7308 51.9763 7.7308 51.6597 7.53553 51.4645C7.34027 51.2692 7.02369 51.2692 6.82843 51.4645L4 54.2929L1.17157 51.4645C0.976311 51.2692 0.659728 51.2692 0.464466 51.4645C0.269204 51.6597 0.269204 51.9763 0.464466 52.1716L3.64645 55.3536ZM3.5 0L3.5 55H4.5L4.5 0L3.5 0Z"
+          fill="#797979"/>
+      </svg>
     </header>
   )
 }

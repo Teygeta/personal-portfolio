@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 
-export function DesignConcepts({ className }) {
+export function DesignConcepts() {
   const constraintsRef1 = useRef(null);
   const constraintsRef2 = useRef(null);
   const constraintsRef3 = useRef(null);
@@ -66,7 +66,8 @@ export function DesignConcepts({ className }) {
         </motion.div>
       </motion.div>
 
-      <p className="md:mt-52 font-light tracking-tight mix-blend-difference">(Some design concepts I have made for
+      <p className="md:mt-52 font-light tracking-tight mix-blend-difference">(Some design concepts I have made
+        for
         companies)</p>
     </div>
 

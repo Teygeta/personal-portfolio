@@ -4,31 +4,33 @@ import { motion } from "framer-motion";
 
 export function DesignConcepts() {
 
-  const constraintsRefs = Array.from({ length: 4 }).map(() => useRef(null));
-  const [Ref1, Ref2, Ref3, Ref4] = constraintsRefs;
+  const ref1 = useRef(null)
+  const ref2 = useRef(null)
+  const ref3 = useRef(null)
+  const ref4 = useRef(null)
 
   const elementsData = [
     {
       className: 'hover:scale-[1.01] duration-300 cursor-grab',
-      ref: Ref1,
+      ref: ref1,
       src: '/img/example-(3).png',
       width: '550',
     },
     {
       className: 'absolute top-44 right-[340px] hover:scale-[1.01] duration-300 cursor-grab',
-      ref: Ref2,
+      ref: ref2,
       src: '/img/example-(1).png',
       width: '370',
     },
     {
       className: 'absolute top-36 right-12 hover:scale-[1.01] duration-300 cursor-grab',
-      ref: Ref3,
+      ref: ref3,
       src: '/img/example-(2).png',
       width: '370',
     },
     {
       className: 'absolute top-12 right-72 hover:scale-[1.01] duration-300 cursor-grab',
-      ref: Ref4,
+      ref: ref4,
       src: '/img/example-(4).png',
       width: '370',
     },
@@ -57,7 +59,5 @@ export function DesignConcepts() {
         for
         companies)</p>
     </div>
-
-
   )
 }

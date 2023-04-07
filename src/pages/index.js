@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Nav";
+import { Nav } from "@/components/Nav";
 import { Introduction } from "@/components/Introduction";
 import { Technology } from "@/components/Technology";
 import { Portfolio } from "@/components/Portfolio";
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       {/*<SpinnerLoader imageLoaded={imageLoaded}/>*/}
-      <Navbar/>
+      <Nav/>
       <Introduction/>
       <Technology/>
       <Portfolio/>

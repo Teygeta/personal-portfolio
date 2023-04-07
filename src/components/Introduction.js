@@ -1,17 +1,17 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export function Introduction() {
 
   return (
     <header id="home" className="md:h-screen relative">
-      <Image
-        alt="home-bg"
-        style={{ objectFit: "cover" }}
-        src=""
-        fill
-        quality={100}
-        priority
-      />
+      {/*<Image*/}
+      {/*  alt="home-bg"*/}
+      {/*  style={{ objectFit: "cover" }}*/}
+      {/*  src=""*/}
+      {/*  fill*/}
+      {/*  quality={100}*/}
+      {/*  priority*/}
+      {/*/>*/}
       <svg width="100%" viewBox="0 0 393 158" fill="none" xmlns="http://www.w3.org/2000/svg"
            className="w-full absolute object-cover mt-10 -z-10">
         <path

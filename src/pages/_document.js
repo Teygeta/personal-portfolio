@@ -6,8 +6,10 @@ export default function Document() {
       <Head>
         {/* HTML Meta Tags */}
         <meta name="title" content="Vittorio Gioda's Portfolio"/>
-        <meta name="description" content="Hi, I'm Vittorio. FULL-STACK WEB STUDENT AND DEVELOPER"/>
+        <meta name="description"
+              content="Hi, I'm Vittorio. FULL-STACK WEB STUDENT AND DEVELOPER. I develop yes web, study the best communication method and create eye-catching designs "/>
         <meta name="keywords" content="portfolio, personal, developer, student, full-stack, web-developer"/>
+        <meta name="keywords" content="designer, work, development, restyling, design"/>
         <meta name="robots" content="index, follow"/>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="language" content="English"/>

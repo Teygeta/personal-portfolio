@@ -179,3 +179,21 @@ html {
     -webkit-text-stroke-color: #ffffff;
     -webkit-text-fill-color: rgba(255, 213, 0, 0);
 }
+
+/*.responsive_nav {*/
+/*    transform: translateY(100vh);*/
+/*}*/
+
+/*.navbar {*/
+/*    height: 100vh;*/
+/*    z-index: 30;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    gap: 2.5rem;*/
+/*    font-size: 1.25rem;*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    transform: translateY(-100vh);*/
+/*}*/

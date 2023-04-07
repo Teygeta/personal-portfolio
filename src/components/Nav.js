@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-function MobileNav({ open }) {
+function MobileNav({ open, setOpen }) {
 
   const links = [
     { href: "#home", name: "Home" },
@@ -20,7 +20,7 @@ function MobileNav({ open }) {
       <div
         className="flex max-md:flex-col max-md:justify-center items-center max-md:h-screen gap-10 text-xl font-inter font-extralight text-[#BEDBD4] md:p-5 ">
         {links.map(({ href, name }, index) => (
-          <div key={index}>
+          <div key={index} onClick={() => setOpen(!open)}>
             <Link href={href} scroll={false}>{name}</Link>
           </div>
         ))}
@@ -35,7 +35,7 @@ export function Nav() {
   const [open, setOpen] = useState(false)
   return (
     <nav className="fixed w-screen bg-black z-50">
-      <MobileNav open={open}/>
+      <MobileNav open={open} setOpen={setOpen}/>
       <div className="w-11/12 flex justify-end">
         <div
           className="group z-50 relative w-6 py-5 cursor-pointer flex-col justify-between items-center flex gap-2 md:hidden "

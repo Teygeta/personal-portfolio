@@ -15,7 +15,6 @@ html {
     color: rgba(255, 255, 255, 0.88);
     scroll-behavior: smooth;
     letter-spacing: -0.03em;
-    overflow-x: hidden;
 }
 
 .rotated-text-home {
@@ -165,9 +164,8 @@ html {
     }
 }
 
-/*TODO fare hover effect */
 .custom-button {
-    @apply block px-3 py-1 border text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference
+    @apply block px-3 py-1 border text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference duration-500 md:text-xl md:py-2 md:px-7
 }
 
 .custom-transparent-text-bordered {

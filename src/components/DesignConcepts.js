@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 export function DesignConcepts() {
 
+  const sharedClass = 'saturate- hover:scale-[1.01] duration-300 cursor-grab saturate-0 hover:saturate-50 active:saturate-50'
+
   const ref1 = useRef(null)
   const ref2 = useRef(null)
   const ref3 = useRef(null)
@@ -11,28 +13,28 @@ export function DesignConcepts() {
 
   const elementsData = [
     {
-      className: 'hover:scale-[1.01] duration-300 cursor-grab',
+      className: `hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
       ref: ref1,
-      src: '/img/example-(3).png',
-      width: '550',
+      src: '/img/housema-design.webp',
+      width: '350',
     },
     {
-      className: 'absolute top-44 right-[340px] hover:scale-[1.01] duration-300 cursor-grab',
+      className: `z-10 absolute top-44 right-[300px] ${sharedClass}`,
       ref: ref2,
-      src: '/img/example-(1).png',
-      width: '370',
+      src: '/img/noface-design.webp',
+      width: '270',
     },
     {
-      className: 'absolute top-36 right-12 hover:scale-[1.01] duration-300 cursor-grab',
+      className: `absolute top-36 right-12 hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
       ref: ref3,
-      src: '/img/example-(2).png',
-      width: '370',
+      src: '/img/bg-design.webp',
+      width: '220',
     },
     {
-      className: 'absolute top-12 right-72 hover:scale-[1.01] duration-300 cursor-grab',
+      className: `z-20 absolute top-12 right-60 hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
       ref: ref4,
-      src: '/img/example-(4).png',
-      width: '370',
+      src: '/img/figi-design.webp',
+      width: '270',
     },
   ]
 
@@ -43,7 +45,7 @@ export function DesignConcepts() {
           <motion.div key={index} className={className} ref={ref}>
             <motion.div drag dragConstraints={ref}>
               <Image
-                alt="portfolio-bg"
+                alt="design-concept"
                 src={src}
                 width={width}
                 height="0"

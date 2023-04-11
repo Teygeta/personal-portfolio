@@ -1,17 +1,7 @@
-// import Image from "next/image";
-
 export function Introduction() {
 
   return (
     <header id="home" className="md:h-screen relative">
-      {/*<Image*/}
-      {/*  alt="home-bg"*/}
-      {/*  style={{ objectFit: "cover" }}*/}
-      {/*  src=""*/}
-      {/*  fill*/}
-      {/*  quality={100}*/}
-      {/*  priority*/}
-      {/*/>*/}
       <svg width="100%" viewBox="0 0 393 158" fill="none" xmlns="http://www.w3.org/2000/svg"
            className="w-full absolute object-cover mt-10 -z-10">
         <path
@@ -31,18 +21,20 @@ export function Introduction() {
       </div>
       <div>
       </div>
-      <div className="pt-48 max-w-xs md:pt-72 md:ml-[15%] mx-[10%] w-fit mb-14">
+      <div className="pt-48 max-md:max-w-xs md:pt-72 md:ml-[15%] mx-[10%] w-fit max-md:mb-32">
         <p className="font-extralight md:text-2xl text-md text-[#BEDBD4]">
           Hi, I&apos;m Vittorio.
         </p>
         <h1 className="md:text-8xl text-4xl text-[#d5ebe7] custom-text-lightgreen-gradient mb-5">
-          FULL-STACK WEB <br/>STUDENT <br/>AND DEVELOPER
+          FULL-STACK <br/> WEB DEVELOPER
         </h1>
-        <button className="custom-button ">
+        <button className="custom-button hover:bg-amber-50 hover:text-black hover:border-black">
           Get In Touch
         </button>
       </div>
-      <svg className="mx-auto mb-10" width="8" height="56" viewBox="0 0 8 56" fill="none"
+      <svg className="mx-auto w-full absolute max-md:hidden md:bottom-10" width="8" height="56"
+           viewBox="0 0 8 56"
+           fill="none"
            xmlns="http://www.w3.org/2000/svg">
         <path
           d="M3.64645 55.3536C3.84171 55.5488 4.15829 55.5488 4.35355 55.3536L7.53553 52.1716C7.7308 51.9763 7.7308 51.6597 7.53553 51.4645C7.34027 51.2692 7.02369 51.2692 6.82843 51.4645L4 54.2929L1.17157 51.4645C0.976311 51.2692 0.659728 51.2692 0.464466 51.4645C0.269204 51.6597 0.269204 51.9763 0.464466 52.1716L3.64645 55.3536ZM3.5 0L3.5 55H4.5L4.5 0L3.5 0Z"

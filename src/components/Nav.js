@@ -18,10 +18,13 @@ function MobileNav({ open, setOpen }) {
       transition-transform duration-300 ease-in-out filter
       `}>
       <div
-        className="flex max-md:flex-col max-md:justify-center items-center max-md:h-screen gap-10 text-md font-inter font-extralight text-[#BEDBD4] md:p-5 ">
+        className="flex max-md:flex-col max-md:justify-center items-center max-md:h-screen gap-10 text-md font-inter font-extralight text-[#BEDBD4] md:py-4 px-6">
         {links.map(({ href, name }, index) => (
-          <div key={index} onClick={() => setOpen(!open)}>
-            <Link href={href} scroll={false}>{name}</Link>
+          <div
+            key={index}
+            onClick={() => setOpen(!open)}
+          >
+            <Link className="hover:text-white duration-300" href={href} scroll={false}>{name}</Link>
           </div>
         ))}
 

@@ -10,15 +10,13 @@ export function Footer() {
           work you do
         </div>
         <div className="flex-1 text-right">
-          <div className="flex flex-col">
-            <a href="#">Facebook</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Instagram</a>
-            <a href="#">Start2Impact</a>
+          <div className="flex flex-col gap-2">
+            <a target="_blank" href="https://www.linkedin.com/in/vittorio-gioda/">Linkedin</a>
+            <a target="_blank" href="https://talent.start2impact.it/profile/vittorio-gioda">Start2Impact</a>
+            <a target="_blank" href="https://github.com/Teygeta">GitHub</a>
           </div>
           <div className="flex-1 text-right mt-10">
-            Powered By Vittorio Gioda
-            2023 - Turin, Italy
+            Powered By Vittorio Gioda 2023 - Turin, Italy
           </div>
         </div>
       </div>

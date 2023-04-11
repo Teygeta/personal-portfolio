@@ -43,6 +43,15 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"/>
 
+        {/* Icons */}
+        <link rel="shortcut icon" href="/favicons/favicon.ico"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png"/>
+
+        {/* Apple */}
+        <meta name="apple-mobile-web-app-title" content="Vittorio Gioda"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"/>
+
       </Head>
       <body>
       <Main/>

@@ -4,7 +4,7 @@ import { DesignConcepts } from "@/components/DesignConcepts";
 export function Portfolio() {
 
   return (
-    <section id="portfolio" className="relative md:h-screen">
+    <section id="portfolio" className="relative md:h-screen max-md:py-10">
       <Image
         alt="portfolio-bg"
         style={{ objectFit: "cover" }}
@@ -12,7 +12,6 @@ export function Portfolio() {
         fill
         quality={100}
         className="-z-10"
-        priority
       />
       <svg width="100%" height="173" viewBox="0 0 1385 173" fill="none" xmlns="http://www.w3.org/2000/svg"
            className="absolute top-24 max-md:hidden">
@@ -35,7 +34,9 @@ export function Portfolio() {
       </div>
       <div className="w-fit mx-auto my-10 md:mt-72 md:ml-[20%]">
         <p className="mix-blend-difference text-xl mb-8">Take a look at my profiles</p>
-        <button className="custom-button mx-auto w-36 md:w-52">GitHub</button>
+        <button
+          className="custom-button mx-auto w-36 md:w-52 hover:bg-white hover:text-black hover:border-black">GitHub
+        </button>
         <br/>
         <button className="custom-button mx-auto w-36 md:w-52">Start2Impact</button>
       </div>
@@ -49,8 +50,6 @@ export function Portfolio() {
           quality={100}
         />
       </div>
-
-
     </section>
   )
 }

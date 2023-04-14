@@ -1,4 +1,4 @@
-export function Contacts() {
+export function Optin() {
 
   return (
     <section className="pb-32 relative">

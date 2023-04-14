@@ -4,10 +4,10 @@ export function Technology() {
 
   const technologies = ["NEXTJS", "TAILWIND", "EXPRESS", "MYSQL", "SUPABASE", "FRAMER"]
   const training = [
-    "Beginning to study computer programming on my own (2021)",
-    "I enroll in Start2Impact University and follow the path as a Full-Stack Developer (2022 - now)",
-    "I start a training path in a foreign company supported by a Senior Developer who teaches me new skills ( Sept 2022 - Feb 2023)",
-    "I decide to embark on a freelance career path (Now)"
+    "Inizio a studiare  programmazione informatica  autonomamente (Ottobre 2021)",
+    "Mi iscrivo alla Start2Impact University e seguo il percorso come Full-Stack Developer (2022 - ora)",
+    "Inizio un percorso di formazione in un'azienda estera, affiancato da un Senior Developer che mi insegna nuove competenze (Agosto 2022 - Febbraio 2023)",
+    "Decido di intraprendere un percorso professionale come freelance (Febbraio 2023 - Ora)"
   ]
   return (
     <section id="technology" className="relative py-20 md:flex md:py-32 md:h-screen">
@@ -22,9 +22,9 @@ export function Technology() {
       />
       <div className="w-fit text-center mx-auto flex-1 md:text-right md:my-auto">
         <div className="custom-text-black-gradient font-medium md:text-xl opacity-90">
-          what I mainly use in my projects
+          quali tecnologie uso nei miei progetti
         </div>
-        <ul className="custom-text-green-gradient md:text-[80px] text-5xl italic font-semibold ">
+        <ul className="custom-text-green-black-gradient md:text-[80px] text-5xl italic font-semibold ">
           {
             technologies.map((i, index) => (
               <li className="-my-1 ml-3" key={index}>{i}</li>
@@ -33,7 +33,7 @@ export function Technology() {
         </ul>
       </div>
       <div className="max-md:hidden border-[0.5px] border-white opacity-40 my-10 mx-[10%]"></div>
-      <ul className="flex-1 font-thin md:my-auto max-md:text-center max-md:mt-32">
+      <ul className="flex-1 md:my-auto max-md:text-center max-md:mt-32">
         {
           training.map((i, index) => (
             <li key={index} className="my-8 pr-3 max-w-[200px] max-md:mx-auto">{i}</li>

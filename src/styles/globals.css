@@ -12,17 +12,21 @@
 html {
     background-color: black;
     font-family: 'Archivo', sans-serif;
+    font-weight: lighter;
     color: rgba(255, 255, 255, 0.88);
     scroll-behavior: smooth;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
 }
 
-.rotated-text-home {
-    transform: translateX(45%) translateY(185px) rotate(90deg);
+.custom-text-green-black-gradient {
+    background: linear-gradient(270deg, #0E0E0E 0%, #9FB7B1 42.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.custom-text-green-gradient {
-    background: linear-gradient(270deg, #0e0e0e 0%, #b7d3cf 42.54%);
+.custom-text-black-green-gradient {
+    background: linear-gradient(90deg, #202020 0%, rgba(80, 119, 105, 0.88) 101.6%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -42,130 +46,8 @@ html {
     background-clip: text;
 }
 
-.portfolio-section {
-    background: linear-gradient(
-            276.29deg,
-            rgba(190, 219, 212, 0.88) 5.31%,
-            rgba(163, 185, 187, 0) 97.79%
-    );
-}
-
-.spinner {
-    width: 45px;
-    height: 45px;
-    animation: spinner-y0fdc1 3.8s infinite ease;
-    transform-style: preserve-3d;
-}
-
-.spinner > div {
-    background-color: rgba(45, 63, 52, 0.25);
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    border: 1.5px solid #d4ede6;
-}
-
-.spinner div:nth-of-type(1) {
-    transform: translateZ(-22.4px) rotateY(180deg);
-}
-
-.spinner div:nth-of-type(2) {
-    transform: rotateY(-270deg) translateX(50%);
-    transform-origin: top right;
-}
-
-.spinner div:nth-of-type(3) {
-    transform: rotateY(270deg) translateX(-50%);
-    transform-origin: center left;
-}
-
-.spinner div:nth-of-type(4) {
-    transform: rotateX(90deg) translateY(-50%);
-    transform-origin: top center;
-}
-
-.spinner div:nth-of-type(5) {
-    transform: rotateX(-90deg) translateY(50%);
-    transform-origin: bottom center;
-}
-
-.spinner div:nth-of-type(6) {
-    transform: translateZ(22.4px);
-}
-
-@keyframes spinner-y0fdc1 {
-    0% {
-        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-    }
-
-    50% {
-        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-    }
-
-    100% {
-        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-    }
-}
-
-.spinner {
-    width: 44.8px;
-    height: 44.8px;
-    animation: spinner-y0fdc1 3.8s infinite ease;
-    transform-style: preserve-3d;
-}
-
-.spinner > div {
-    background-color: rgba(25, 55, 39, 0.25);
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    border: 1.5px solid #c2efdb;
-}
-
-.spinner div:nth-of-type(1) {
-    transform: translateZ(-22.4px) rotateY(180deg);
-}
-
-.spinner div:nth-of-type(2) {
-    transform: rotateY(-270deg) translateX(50%);
-    transform-origin: top right;
-}
-
-.spinner div:nth-of-type(3) {
-    transform: rotateY(270deg) translateX(-50%);
-    transform-origin: center left;
-}
-
-.spinner div:nth-of-type(4) {
-    transform: rotateX(90deg) translateY(-50%);
-    transform-origin: top center;
-}
-
-.spinner div:nth-of-type(5) {
-    transform: rotateX(-90deg) translateY(50%);
-    transform-origin: bottom center;
-}
-
-.spinner div:nth-of-type(6) {
-    transform: translateZ(22.4px);
-}
-
-@keyframes spinner-y0fdc1 {
-    0% {
-        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-    }
-
-    50% {
-        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-    }
-
-    100% {
-        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
-    }
-}
-
 .custom-button {
-    @apply block px-3 py-1 border text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference duration-500 md:text-xl md:py-2 md:px-7
+    @apply block px-4 py-1 border text-[#BEDBD4]/[0.8] border-[#BEDBD4] mix-blend-difference duration-500 text-sm md:text-xl md:py-2 md:px-7
 }
 
 .custom-transparent-text-bordered {
@@ -178,20 +60,9 @@ html {
     -webkit-text-fill-color: rgba(255, 213, 0, 0);
 }
 
-/*.responsive_nav {*/
-/*    transform: translateY(100vh);*/
-/*}*/
-
-/*.navbar {*/
-/*    height: 100vh;*/
-/*    z-index: 30;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    gap: 2.5rem;*/
-/*    font-size: 1.25rem;*/
-/*    position: fixed;*/
-/*    width: 100%;*/
-/*    transform: translateY(-100vh);*/
-/*}*/
+/*fare noise effect*/
+.benefits-section {
+    color: black;
+    font-weight: 200;
+    background: linear-gradient(90deg, rgba(194, 227, 219, 0.88) 0%, #FFFFFF 100%);
+}

@@ -2,8 +2,9 @@ import { Nav } from "@/components/Nav";
 import { Introduction } from "@/components/Introduction";
 import { Technology } from "@/components/Technology";
 import { Portfolio } from "@/components/Portfolio";
-import { Contacts } from "@/components/Contacts";
+import { Optin } from "@/components/Optin";
 import { Footer } from "@/components/Footer";
+import { BenefitsPage } from "@/components/BenefitsPage";
 
 export default function Home() {
 
@@ -20,9 +21,10 @@ export default function Home() {
       {/*<SpinnerLoader imageLoaded={imageLoaded}/>*/}
       <Nav/>
       <Introduction/>
+      <BenefitsPage/>
       <Technology/>
       <Portfolio/>
-      <Contacts/>
+      <Optin/>
       <Footer/>
     </>
   )

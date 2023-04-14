@@ -34,8 +34,8 @@ function MobileNav({ open, setOpen }) {
 }
 
 export function Nav() {
-
   const [open, setOpen] = useState(false)
+
   return (
     <nav className="fixed w-screen bg-black z-50">
       <MobileNav open={open} setOpen={setOpen}/>

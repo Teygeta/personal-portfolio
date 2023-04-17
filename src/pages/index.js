@@ -1,29 +1,20 @@
 import { Nav } from "@/components/Nav";
 import { Introduction } from "@/components/Introduction";
-import { Technology } from "@/components/Technology";
+import { About } from "@/components/About";
 import { Portfolio } from "@/components/Portfolio";
 import { Optin } from "@/components/Optin";
 import { Footer } from "@/components/Footer";
 import { BenefitsPage } from "@/components/BenefitsPage";
 
 export default function Home() {
-
-  // //SPINNER-IMAGE LOGIC
-  // //TODO correggere
-  // const [imageLoaded, setImageLoaded] = useState(false);
-  // const handleImageLoad = () => {
-  //   setImageLoaded(true);
-  //   console.log("Image Loaded")
-  // };
-
   return (
     <>
-      {/*<SpinnerLoader imageLoaded={imageLoaded}/>*/}
+      <div className="max-md:absolute max-md:top-14 w-screen text-center max-md:text-xs">SITO IN FASE DI SVILUPPO</div>
       <Nav/>
       <Introduction/>
       <BenefitsPage/>
-      <Technology/>
       <Portfolio/>
+      <About/>
       <Optin/>
       <Footer/>
     </>

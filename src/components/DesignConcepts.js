@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function DesignConcepts() {
 
-  const sharedClass = 'saturate- hover:scale-[1.01] duration-300 cursor-grab saturate-0 hover:saturate-50 active:saturate-50'
+  const sharedClass = 'hover:scale-[1.01] duration-300 cursor-grab saturate-0 hover:saturate-50 active:saturate-50'
 
   const ref1 = useRef(null)
   const ref2 = useRef(null)
@@ -13,35 +13,35 @@ export function DesignConcepts() {
 
   const elementsData = [
     {
-      className: `hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
+      className: `absolute top-0 right-10 hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
       ref: ref1,
       src: '/img/housema-design.webp',
-      width: '350',
+      width: '250',
     },
     {
-      className: `z-10 absolute top-44 right-[300px] ${sharedClass}`,
+      className: `z-10 absolute top-40 right-36 ${sharedClass}`,
       ref: ref2,
       src: '/img/noface-design.webp',
-      width: '270',
+      width: '190',
     },
     {
-      className: `absolute top-36 right-12 hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
+      className: `absolute top-36 -right-2 hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
       ref: ref3,
       src: '/img/bg-design.webp',
-      width: '220',
+      width: '150',
     },
     {
-      className: `z-20 absolute top-12 right-60 hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
+      className: `z-20 absolute top-12 right-40 hover:scale-[1.01] duration-300 cursor-grab ${sharedClass}`,
       ref: ref4,
       src: '/img/figi-design.webp',
-      width: '270',
+      width: '230',
     },
   ]
 
   return (
-    <div className="absolute right-[6%] xl:top-[370px] mt-20 max-md:hidden">
-      {
-        elementsData.map(({ className, ref, src, width }, index) => (
+    <div className="max-md:hidden">
+      <div className="absolute mr-10 ">
+        {elementsData.map(({ className, ref, src, width }, index) => (
           <motion.div key={index} className={className} ref={ref}>
             <motion.div drag dragConstraints={ref}>
               <Image
@@ -53,13 +53,14 @@ export function DesignConcepts() {
                 className="pointer-events-none"
               />
             </motion.div>
-
           </motion.div>
-        ))
-      }
-      <p className="md:mt-52 font-light tracking-tight mix-blend-difference">(Some design concepts I have made
-        for
-        companies)</p>
+        ))}
+        <p className="md:mt-80 font-light tracking-tight mix-blend-difference">(Some design concepts I have made
+          for
+          companies)
+        </p>
+      </div>
     </div>
+
   )
 }

@@ -2,7 +2,7 @@ export function Introduction() {
 
   return (
     <header id="home" className="md:h-screen relative">
-      <svg width="100%" viewBox="0 0 493 158" fill="none" xmlns="http://www.w3.org/2000/svg"
+      <svg width="100%" viewBox="0 0 493 158" xmlns="http://www.w3.org/2000/svg"
            className="w-full absolute object-cover mt-4 -z-10">
         <path
           d="M-13 157L55.1662 72.2224C55.4639 71.8522 55.7883 71.5042 56.1369 71.1814V71.1814C61.3575 66.3464 69.8329 68.5723 72.0039 75.3487L79.414 98.4774C84.494 114.333 103.288 120.984 117.21 111.852L174.2 74.4699L194.378 58.7261C215.789 42.0202 245.416 40.6569 268.271 55.3258V55.3258C293.635 71.6056 326.924 67.9684 348.174 46.5952L394.502 0"
@@ -30,9 +30,10 @@ export function Introduction() {
           con un <span className="font-semibold">design accattivante </span>
           ed una<span className="font-semibold"> comunicazione efficace</span>.
         </p>
-        <button className="custom-button hover:bg-amber-50 hover:text-black hover:border-black">
-          Chiedi informazioni
-        </button>
+        <a href="#contacts">
+          <button className="custom-button hover:bg-amber-50 hover:text-black hover:border-black">Chiedi informazioni
+          </button>
+        </a>
       </div>
       <svg className="mx-auto mb-4 md:w-full md:absolute md:bottom-10" width="8" height="56"
            viewBox="0 0 8 56"

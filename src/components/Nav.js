@@ -5,9 +5,9 @@ function MobileNav({ open, setOpen }) {
 
   const links = [
     { href: "#home", name: "Home" },
-    { href: "#technology", name: "Technology" },
     { href: "#portfolio", name: "Portfolio" },
-    { href: "#about", name: "About" },
+    { href: "#about", name: "Altro" },
+    { href: "#contacts", name: "Contatti" },
   ]
 
 
@@ -19,6 +19,7 @@ function MobileNav({ open, setOpen }) {
       `}>
       <div
         className="flex max-md:flex-col max-md:justify-center items-center max-md:h-screen gap-10 text-md font-inter font-extralight text-[#BEDBD4] md:py-4 px-6">
+
         {links.map(({ href, name }, index) => (
           <div
             key={index}
@@ -37,9 +38,10 @@ export function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed w-screen bg-black z-50">
+    <nav className="sticky top-0 w-screen bg-black z-50">
       <MobileNav open={open} setOpen={setOpen}/>
       <div className="w-11/12 flex justify-end">
+
         <div
           className="group z-50 relative w-6 py-5 cursor-pointer flex-col justify-between items-center flex gap-2 md:hidden "
           onClick={() => {
@@ -53,5 +55,4 @@ export function Nav() {
       </div>
     </nav>
   )
-
 }

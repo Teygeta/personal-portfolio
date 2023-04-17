@@ -1,7 +1,7 @@
 export function Optin() {
 
   return (
-    <section className="pb-32 relative">
+    <section id="contacts" className="pb-32 relative">
       <svg width="100%" height="100%" viewBox="0 0 393 175" fill="none" xmlns="http://www.w3.org/2000/svg"
            className="w-full object-cover absolute -top-52 -z-20">
         <path
@@ -15,11 +15,17 @@ export function Optin() {
           stroke="#26312E"/>
       </svg>
       <div className="pt-32">
-        <h1 className="text-center text-3xl text-[#BEDBD4] italic">Shall We Cooperate <br/>Together?</h1>
-        <div className="w-full mt-20">
-          <button className="custom-button mx-auto mb-14">Get In Touch</button>
-          <button className="custom-button mx-auto bg-[#BEDBD4]"><p className="mix-blend-difference">Hire Me Now</p>
-          </button>
+        <h1 className="text-center text-3xl text-[#BEDBD4] italic">Prenota una chiamata
+          gratuita per chiarire ogni dubbio</h1>
+        <div className="w-full mt-20 md:flex">
+          <a href="#" className="mx-auto">
+            <button className="custom-button w-36 max-md:mb-14">Prenota ora</button>
+          </a>
+          <a href="#home" className="mx-auto">
+            <button className="custom-button w-36 bg-[#BEDBD4]"><p className="mix-blend-difference">Torna
+              alla Home</p>
+            </button>
+          </a>
         </div>
       </div>
 

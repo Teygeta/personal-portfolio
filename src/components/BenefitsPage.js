@@ -81,21 +81,19 @@ export function BenefitsPage() {
           di alta qualità.
         </p>
       </Benefit>
-      <div className="text-center mt-32">
-        <p className="max-w-5xl mx-auto">Potrei scrivere una frase che spiega come io posso offrire un sito web
-          professionale
-          ad
-          alte performance per
-          migliorare la propria attività
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at commodi consequatur deserunt dolore
-          ducimus eaque excepturi expedita itaque magnam maiores numquam, quibusdam repellat, sequi sunt ullam velit
-          veniam voluptatibus.</p>
-        <div className="w-full mt-20 md:flex">
-          <button className="custom-button mx-auto max-md:mb-14">Get In Touch</button>
-          <button className="custom-button mx-auto bg-[#BEDBD4]"><p className="mix-blend-difference">Hire Me
-            Now</p>
-          </button>
-        </div>
+      <div className="text-center mt-32 mx-[5%]">
+        <p className="max-w-5xl font-light mx-auto md:text-xl">In sintesi, un sito web professionale aumenta la
+          visibilità
+          dell'azienda
+          e attira
+          nuovi clienti, aumentando le vendite e migliorando la credibilità dell'impresa. <br/> Inoltre, attribuisce un
+          vantaggio competitivo rispetto ai concorrenti e offre ai clienti un'esperienza online di alta qualità.
+          <br/>
+          <br/>
+          <span className="font-semibold">Discutiamo assieme su come sviluppare un sito web professionale adatto alle tue esigenze:</span>
+        </p>
+        <button className="custom-button mx-auto max-md:mb-14 hover:scale-110 my-20"><a href="#contacts">Contattami</a>
+        </button>
       </div>
 
     </section>

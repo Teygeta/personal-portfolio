@@ -6,7 +6,7 @@ function MobileNav({ open, setOpen }) {
   const links = [
     { href: "#home", name: "Home" },
     { href: "#portfolio", name: "Portfolio" },
-    { href: "#about", name: "Altro" },
+    // { href: "#about", name: "Altro" },
     { href: "#contacts", name: "Contatti" },
   ]
 

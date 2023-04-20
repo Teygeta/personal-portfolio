@@ -15,14 +15,14 @@ export function Optin() {
           stroke="#26312E"/>
       </svg>
       <div className="pt-32">
-        <h1 className="text-center text-3xl text-[#BEDBD4] italic">Prenota una chiamata
+        <h1 className="text-center text-3xl text-[#BEDBD4] italic mx-3">Prenota una chiamata
           gratuita per chiarire ogni dubbio</h1>
         <div className="w-full mt-20 md:flex">
-          <a href="#" className="mx-auto">
-            <button className="custom-button w-36 max-md:mb-14">Prenota ora</button>
+          <a href="#">
+            <button className="custom-button mx-auto w-36 max-md:mb-14">Prenota ora</button>
           </a>
-          <a href="#home" className="mx-auto">
-            <button className="custom-button w-36 bg-[#BEDBD4]"><p className="mix-blend-difference">Torna
+          <a href="#home" className="">
+            <button className="custom-button mx-auto w-36 bg-[#BEDBD4]"><p className="mix-blend-difference">Torna
               alla Home</p>
             </button>
           </a>

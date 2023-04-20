@@ -9,12 +9,11 @@ import { BenefitsPage } from "@/components/BenefitsPage";
 export default function Home() {
   return (
     <>
-      <div className="max-md:absolute max-md:top-14 w-screen text-center max-md:text-xs">SITO IN FASE DI SVILUPPO</div>
       <Nav/>
       <Introduction/>
       <BenefitsPage/>
       <Portfolio/>
-      <About/>
+      {/*<About/>*/}
       <Optin/>
       <Footer/>
     </>

@@ -84,10 +84,10 @@ export function BenefitsPage() {
       <div className="text-center mt-32 mx-[5%]">
         <p className="max-w-5xl font-light mx-auto md:text-xl">In sintesi, un sito web professionale aumenta la
           visibilità
-          dell'azienda
+          dell&apos;azienda
           e attira
-          nuovi clienti, aumentando le vendite e migliorando la credibilità dell'impresa. <br/> Inoltre, attribuisce un
-          vantaggio competitivo rispetto ai concorrenti e offre ai clienti un'esperienza online di alta qualità.
+          nuovi clienti, aumentando le vendite e migliorando la credibilità dell&apos;impresa. <br/> Inoltre, attribuisce un
+          vantaggio competitivo rispetto ai concorrenti e offre ai clienti un&apos;esperienza online di alta qualità.
           <br/>
           <br/>
           <span className="font-semibold">Discutiamo assieme su come sviluppare un sito web professionale adatto alle tue esigenze:</span>

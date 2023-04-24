@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { DesignConcepts } from "@/components/DesignConcepts";
+import Image from 'next/image';
+import { DesignConcepts } from '@/components/DesignConcepts';
 
 export function Portfolio() {
 
@@ -8,7 +8,7 @@ export function Portfolio() {
       {/*scurire foto per far meglio contrast con il testo*/}
       <Image
         alt="portfolio-bg"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: 'cover' }}
         src="/img/unsplash_DVzaV16Wcao.png"
         fill
         quality={100}
@@ -38,7 +38,7 @@ export function Portfolio() {
             <br/>
             <a target="_blank"
                href="https://talent.start2impact.it/profile/vittorio-gioda">
-              <button className="custom-button md:w-52 mx-auto bg-[#BEDBD4] hover:scale-110">
+              <button className="custom-button md:w-52 mx-auto bg-custom-light-green hover:scale-110">
                 <span className="mix-blend-difference">Start2Impact</span>
               </button>
             </a>

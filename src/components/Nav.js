@@ -36,7 +36,7 @@ export function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 w-screen bg-black z-50">
+    <nav className="sticky top-0 bg-black z-50">
       <MobileNav open={open} setOpen={setOpen}/>
       <div className="w-11/12 flex justify-end">
         <div

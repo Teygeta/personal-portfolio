@@ -12,6 +12,7 @@ export function About() {
 
   const technologies = [
     { title: 'NEXTJS', link: 'https://nextjs.org/' },
+    { title: 'NUXTJS', link: 'https://nuxt.com/' },
     { title: 'TAILWIND', link: 'https://tailwindcss.com/' },
     { title: 'EXPRESS', link: 'https://expressjs.com/' },
     { title: 'SUPABASE', link: 'https://supabase.com/' },
@@ -23,7 +24,7 @@ export function About() {
         <p>
           Il mio interesse per lo <i>sviluppo web</i> è nato nel 2021, spinto dalla tipica
           insoddisfazione che si prova quando
-          si svolge un lavoro che non si ama. <br/>
+          si svolge un lavoro che non si ama. <br />
           Oggi, ho avuto l`&apos;opportunità di conoscere svariati professionisti del settore e di formarmi abbastanza
           da
           poter
@@ -49,7 +50,7 @@ export function About() {
             {
               technologies.map(({ title, link }, index) => (
                 <li key={index}
-                    className="-my-1 ml-3 custom-text-green-black-gradient transition hover:scale-95 hover:duration-200">
+                  className="-my-1 ml-3 custom-text-green-black-gradient transition hover:scale-95 hover:duration-200">
                   <a
                     href={link} target="_blank">{title}</a></li>
               ))
